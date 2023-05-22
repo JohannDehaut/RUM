@@ -1,0 +1,71 @@
+<!-- Présentation de la société-->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>L'histoire de notre société</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Historique de la RUM</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre800">
+                        <p>
+                            C'est en 1889, sous l'impulsion de quatre musiciens habitant le hameau de Petit-Dour, décidèrent de créer une société musicale baptisée: la Fanfare "L'Union". Celle-ci a été dirigée par de talentueux directeurs musicaux et s'est toujours maintenue à l'avant de la vie artistique du village.<br><br>
+                            C'est après avoir été sous la houlette de Messieurs Baudonck, Bachy, Bourgeois, Doyen Victorien et Jean, Schiltz et Richard, que la société dirigée par M. Liénard fête ses 100 ans en 1989.<br><br>
+                            La fanfare, emmenée par Murielle Docquegnies, accèdera en première catégorie en 1998, lors des rencontres provinciales du Hainaut. L'année suivante, la société obtient le titre de "ROYALE" et est ainsi rebaptisée "Royale Union Musicale".<br><br>
+                            Entretemps dirigée par M. L'Hoir, membre de l'orchestre de la Marine Belge, c'est en mai 2008 qu'il passe le flambeau et la baguette à son collègue Yanick Doyen.<br><br>
+                            Natif de Petit-Dour, Yanick représente la troisième génération de la famille Doyen au poste de Directeur Artistique. Lui et le Comité accordent une place importante à la formation et au soutien de jeunes musiciens.<br><br>
+                            En octobre 2022, la Royale Union Musicale de Petit-Dour se présente aux rencontres provinciales du Hainaut et maintient sa place en première catégorie et ce grâce à tous nos musiciens et notre Directeur Artistique, tous désireux de prouver leurs compétences musicales.<br><br>
+                            Source de rassemblement collectif et surtout de plaisir, la musique donne une âme à nos cœurs, des ailes à la pensée et un essor à l'imagination. <br><br>
+                            Elle est l'essence du temps, éblouissante et passionnément éternelle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <footer class="box">
+            <div class="copyright">
+                <em>© 2023 - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="static/images/icons/Facebook.ico" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

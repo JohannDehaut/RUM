@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Accueil</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+    <!--<body id="bg" style="background-image:url('{% static 'images/fonds/notes.jpg' %}')">-->
+        <header>
+            <p>Bienvenue sur le site de la <br><br><em>Royale Union Musicale de Petit-Dour</em> </p>
+            <br><br>
+        </header>
+        <section>
+            <div class="texteMilieu">
+                <div class="img">
+                    <a href="historique" title="Poursuivre votre navigation à la découverte de notre société">
+                        <img src="static/images/logos/RUM.jpg" height="400px">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

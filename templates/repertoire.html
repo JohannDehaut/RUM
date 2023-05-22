@@ -1,0 +1,176 @@
+<!-- Programme joué cette année -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Programmation annuelle</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body >
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Répertoire musical de {% now "Y"%}</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <!--<div id="bg" style="background-image:url('{% static 'images/fonds/portee.png' %}')">
+            </div>-->
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre800">
+                        <table>
+                            <!--<tr class="trREP">
+                                <td class="tdREP1"><h4>Les planètes</h4>1er mouvement - Mars</td>
+                                <td class="tdREP2"><a href="https://fr.wikipedia.org/wiki/Gustav_Holst" target="_blank" title="Wikipedia">Gustav HOLST</a></td>
+                            </tr>-->
+                           <!-- <tr class="trREP">
+                                <td class="tdREP1"><h4>Petite suite classique</h4></td>
+                                <td class="tdREP2">Nicholas DURON</td>
+                            </tr>-->
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>Arsenal</h4>Concert march</td>
+                                <td class="tdREP2"><a href="https://fr.wikipedia.org/wiki/Jean_Van_der_Roost" target="_blank" title="Page Wikipedia">Jan VAN DER ROOST</a></td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>N°1 Pastorale - L'Arlésienne</h4></td>
+                                <td class="tdREP2"><a href="https://fr.wikipedia.org/wiki/Georges_Bizet" target="_blank" title="Page Wikipedia">Georges BIZET</a></td>
+                                <td class="tdREP2">arr. <a href="" target="_blank" title="Corelia Musique"></a>Jean-Michel SORLIN</td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>T.V. Police Medley</h4>(Starsky and Hutch * Police Woman * Charlie's Angels)</td>
+                                <td class="tdREP2">
+                                    <a>SCOTT</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Lalo_Schifrin" target="_blank" title="Page Wikipedia">Lalo SCHNIFRIN</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Morton_Stevens" target="_blank" title="Page Wikipedia">Morton STEVENS</a><br>
+                                </td>
+                                <td class="tdREP2">arr. John TATGENHORST</td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>Don't cry for me Argentina</h4>Du film Evita</td>
+                                <td class="tdREP2">
+                                    <a href="https://en.wikipedia.org/wiki/Andrew_Lloyd_Webber" target="_blank" title="Page Wikipedia">Andrew Lloyd WEBBER</a>
+                                </td>
+                                <td>
+                                    <a href="https://nl.wikipedia.org/wiki/Rieks_van_der_Velde" target="_blank" title="Page Wikipedia">arr. Rieks VAN DER VELDE</a>
+                                </td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>The best of Charles Aznavour</h4>For me, formidable * Les Comédiens * La Bohème * Je m'voyais déjà</td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Charles_Aznavour" target="_blank" title="Page Wikipedia">Charles AZNAVOUR</a>
+                                </td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Andr%C3%A9_Waignein" target="_blank" title="Page Wikipedia">arr. Roland KERNEN (André WAIGNEIN)</a>
+                                </td>
+                            </tr>
+                            <!--<tr class="trREP">
+                                <td class="tdREP1"><h4>Love story</h4>(Where do I begin)</td>
+                                <td class="tdREP2"><a href="https://fr.wikipedia.org/wiki/Francis_Lai" target="_blank" title="Page Wikipedia">Francis LAI</a></td>
+                                <td class="tdREP2">arr. <a href="https://fr.wikipedia.org/wiki/Naohiro_Iwai" target="_blank" title="Page Wikipedia">Naohiro IWAI</a></td>
+                            </tr>-->
+                            <!--<tr class="trREP">
+                                <td class="tdREP1"><h4>CINE-MARCHES</h4>Où est donc passée la 7ième compagnie? * Le gendarme de Saint-Tropez * Le mur de l'Atlantique</td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Henri_Bourtayre" target="_blank" title="Henri Bourtayre">Henri BOURTAYRE</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Raymond_Lefebvre_(compositeur)" target="_blank" title="Raymond Lefebvre">Raymond LEFEBVRE</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Claude_Bolling" target="_blank" title="Claude Bolling">Claude BOLLING</a>
+                                </td>
+                                <td class="tdREP2">arr. Dominique WYCKHUYS</td>
+                            </tr>-->
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>COLDPLAY on stage</h4>(Clocks * Lost! * Viva la Vida)</td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Guy_Berryman" target="_blank" title="Page Wikipedia">Guy BERRYMAN</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Jon_Buckland" target="_blank" title="Page Wikipedia">Jon BUCKLAND</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Will_Champion" target="_blank" title="Page Wikipedia">Will CHAMPION</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Chris_Martin" target="_blank" title="Page Wikipedia">Chris MARTIN</a><br>
+                                </td>
+                                <td class="tdREP2">arr. Michael BROWN</td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP1"><h4>Vive la France</h4>(La Marseillaise * Poupée de cire, poupée de son * Non, je ne regrette rien * Et maintenant * Pour un flirt * La Vie en Rose * Les Champs-Elysées)</td>
+                                <td class="tdREP2">
+                                </td>
+                                <td class="tdREP2">
+                                    <a href="https://de.wikipedia.org/wiki/Frank_Bernaerts" target="_blank" title="Page Wikipedia">arr. Frank BERNAERTS</a>
+                                </td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP2"><h4>Il jouait du piano debout</h4></td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Michel_Berger" target="_blank" title="Page Wikipedia">Michel BERGER</a>
+                                </td>
+                                <td class="tdREP2">
+                                    arr. François PERRIN
+                                </td>
+                            </tr>
+                            <tr class="trREP">
+                                <td  class="tdREP2"><h4>A natural woman</h4></td>
+                                <td>
+                                    <a href="https://fr.wikipedia.org/wiki/Gerry_Goffin" target="_blank" title="Page Wikipedia">Gerry GOFFIN</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Carole_King" target="_blank" title="Page Wikipedia">Carole KING</a><br>
+                                    <a href="https://fr.wikipedia.org/wiki/Jerry_Wexler" target="_blank" title="Page Wikipedia">Jerry WEXLER</a>
+                                </td>
+                                <td>
+                                    <a href="https://tierolff.nl/en/rob-balfoort?___store=en&___from_store=nl" target="_blank" title="Page Wikipedia">arr. Rob BALFOORT</a>
+                                </td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP2"><h4>The Pink Panther</h4></td>
+                                <td>
+                                    <a href="https://fr.wikipedia.org/wiki/Henry_Mancini" target="_blank" title="Page Wikipedia">Henry MANCINI</a>
+                                </td>
+                                <td class="tdREP2">
+                                    <a href="https://fr.wikipedia.org/wiki/Johan_de_Meij" target="_blank" title="Page Wikipedia">arr. Johan DE MEIJ</a>
+                                </td>
+                            </tr>
+                            <tr class="trREP">
+                                <td class="tdREP2"><h4>El Doudou</h4></td>
+                                <td>
+                                    <a href="" target="_blank" title="">J. SCHMITS</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+        <footer class="box">
+            <div class="copyright">
+                <em>© 2023 - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!-- agenda des prestations mais aussi et surtout des répétitions -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Agenda</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Agenda de {% now "Y"%}</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <!--<div class="centre800">
+                    <h1>Prochaine réunion du comité le:</h1>
+                    <br>
+                    <h1><em>5 mars 2023</em></h1>
+                    <br><br>
+                    <div class="centre800">
+                        <h1>Reprise des répétitions le 3 janvier 2023</h1>
+                    </div>
+                    <br><br>-->
+                    <div class="centre800">
+                        <h1>Festival de printemps le 23 avril 2023</h1>
+                        <p>
+                            <br>
+                            <a href="{% static 'images/affichesConcerts/2023/Festival de printemps.jpg' %}" title="Festival de Printemps" target="_blank">
+                                <img src="{% static 'images/affichesConcerts/2023/Festival de printemps.jpg' %}" height="20%" width="20%">
+                            </a>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert le dimanche 30 avril 2023</h1>
+                        <p>
+                            <br>
+                            Home du CPAS de Dour à 11 heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Gala musical de la Pentecôte le 28 mai 2023</h1>
+                        <p>
+                            <br>
+                            <a href="{% static 'images/affichesConcerts/2023/Gala.png' %}" target="_blank" title="La RUM en fête">
+                                <img src="{% static 'images/affichesConcerts/2023/Gala.png' %}" height="20%" width="20%">
+                            </a>
+                            <a href="https://www.google.be/maps/place/Rue+Charles+Wantiez+27,+7370+Dour/@50.4011926,3.7462694,17z/data=!3m1!4b1!4m6!3m5!1s0x47c2589d55d52515:0xc432189a93f153a4!8m2!3d50.4011893!4d3.7511349!16s%2Fg%2F11gfmck_nq?hl=fr" target="_blank" title="Gala">
+
+                                <br>
+                                Ecole communale d'Elouges dès 16 heures
+                            </a>
+                        </p>
+                    </div>
+                    <!--<br>
+                    <div class="centre800">
+                        <h1>Concert le samedi 24 juin 2023</h1>
+                        <p>
+                            Fêtes de la musique<br>
+                            Eglise Saint Martin à Elouges à 15 heures
+                        </p>
+                    </div>-->
+                    <br>
+                    <div class="centre800">
+                        <h1>Ducasse de Angre le dimanche 2 juillet 2023</h1>
+                        <p>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Congés annuels du 3 au 24 juillet 2023</h1>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Reprise des répétitions le 25 juillet 2023</h1>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Ducasse de Autreppe le dimanche 30 juillet à 11 heures</h1>
+                        <p>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert le mardi 15 août 2023</h1>
+                        <p>
+                            Ducasse de Petit-Dour à 17 heures suivi du BBQ au local
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert le dimanche 20 août 2023</h1>
+                        <p>
+                            Ducasse du Joncquois à Blaugies à 12h30
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert sur la place de Bruxelles le 9 septembre</h1>
+                        <p>
+                            Grand'Place à Bruxelles à 19h
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert à Erquelines</h1>
+                        <p>
+                            Erquelines à 17 heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert le 1er octobre</h1>
+                        <p>
+                            Houdain-lez-Bavay à 16 heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Messe de Sainte Cécile le dimanche 26 novembre 2023</h1>
+                        <p>
+                            Eglise Saint Martin à Elouges à 11 heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert de Noël le samedi 9 décembre 2023</h1>
+                        <p>
+                            Eglise Saint Martin à Elouges à 18 heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert de Noël le 15 décembre à ?? heures</h1>
+                        <p>
+                            Eglise d'Autreppes (Ormegnies) à ?? heures
+                        </p>
+                    </div>
+                    <br>
+                    <div class="centre800">
+                        <h1>Concert de Noël le 17 décembre à 17h</h1>
+                        <p>
+                            Eglise de Warquignies à 17 heures
+                        </p>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <br><br>
+        </section>
+        <footer>
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!-- présentation de l'asbl "Amicale des gens de Là-Haut" -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>L'asbl "L'amicale des Gens de Là-Haut"</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Le Comité de la RUM</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre800">
+                        C'est le 7 septembre 1999 que le Comité de la RUM a constitué une asbl sous la dénomination:<br><br><br>
+                        <a href="https://kbopub.economie.fgov.be/kbopub/toonondernemingps.html?ondernemingsnummer=470331818" target="_blank" title="Vers la BCE"><em>Amicale des gens de Là-Haut</em></a>
+                    </div>
+                    <div class="centre800">
+                        <br><br>
+                        <table>
+                            <tr>
+                                <td class="td1">Siège social:<br><br></td>
+                                <td>
+                                    <a href="https://www.google.be/maps/place/Rue+du+Cimetière+5,+7370+Dour/@50.3799947,3.8193079,18.5z/data=!4m5!3m4!1s0x47c25938156902bd:0xa3f0f70fec1aeb48!8m2!3d50.3797755!4d3.8197234?hl=fr" target="_blank">
+                                    5, rue du Cimetière, 7370 Petit-Dour
+                                    </a>
+                                    <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Président d'honneur<br><br></td>
+                                <td>Yves GOSSUIN<br><br></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Présidence:<br><br></td>
+                                <td><a href="mailto:carine.estievenart@live.be">Carine ESTIEVENART</a><br><br></td>
+                            </tr>
+                            <tr>
+                                <td>Vice-présidence:<br><br></td>
+                                <td><a href="mailto:yanickdoyen@hotmail.com">Yanick DOYEN</a><br><br></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Direction artistique:<br><br></td>
+                                <td><a href="mailto:yanickdoyen@hotmail.com">Yanick DOYEN</a><br><br></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Secrétariat:<br>Sous-direction artistique:<br><br></td>
+                                <td><a href="mailto:veysjn@gmail.com">Jean-Noël VEYS</a><br><br></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Trésorerie:<br><br></td>
+                                <td><a href="mailto:chausson0312@hotmail.com">Evelyne DOYEN</a><br><br></td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Gestion du bar:<br><br></td>
+                                <td><a href="mailto:b.delcroix57@gmail.com">Bernadette DELCROIX</a><br><br></td>
+                            </tr>
+                            <!--<tr>
+                                <td class="td1">Bibliothécaires:<br><br></td>
+                                <td>René MESPOUILLE<br>Franciane LEPRETRE<br><br></td>
+                            </tr>-->
+                            <tr>
+                                <td class="td1">Membres</td>
+                                <td>Fabrice LEPRETRE<br>
+                                    Franciane LEPRETRE<br>
+                                    <a href="mailto:veysjn@gmail.com">Monique DELABIE</a><br><br></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <footer>
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y"%}</em>
+            </div>
+        </footer>
+    </body>
+</html>

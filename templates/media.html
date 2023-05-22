@@ -1,0 +1,179 @@
+<!-- -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Médias</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Quelques photos de notre fanfare</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="centre800">
+                    <img src="{% static 'images/icons/En travaux.png' %}" height="100%" width="100%">
+                    <!--<h1><em>2022</em></h1>
+                    <br><br>
+                    <table class="tableauPhoto">
+                        <tr>
+                            <h3><em>Concert de Sainte Cécile</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <h3><em>Noël en l'église Saint Martin</em></h3>
+                        </tr>
+                        <tr class="trPhotos">
+                            <td class="tdPhotos">
+                                <a href="static/images/photos/2022/Noel/01.jpg" target="_blank">
+                                    <img src="{% static 'images/photos/2022/Noel/01.jpg' %}" title="Regardez les deux clowns dans le fond !" height="85%" width="85%"/>
+                                </a>
+                            </td>
+                            <td class="tdPhotos">
+                                <a href="static/images/photos/2022/Noel/02.jpg" target="_blank">
+                                    <img src="{% static 'images/photos/2022/Noel/02.jpg' %}" title="Simon & Sarah" height="85%" width="85%"/>
+                                </a>
+                            </td>
+                            <td class="tdPhotos">
+                                <a href="static/images/photos/2022/Noel/03.jpg" target="_blank">
+                                    <img src="{% static 'images/photos/2022/Noel/03.jpg' %}" title="Ensemble" height="85%" width="85%"/>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </div>
+                <br><br>
+                <div class="centre800">
+                    <h1><em>2023</em></h1>
+                    <br><br>
+                    <table class="tableauPhoto">
+                        <tr>
+                            <h3><em>Concert au Home du CPAS de Dour</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de gala</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <h3><em>Concert de Noël</em></h3>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>-->
+                </div>
+                <br><br>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <em>© 2023 - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

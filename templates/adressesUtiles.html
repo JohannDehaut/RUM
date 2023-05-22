@@ -1,0 +1,116 @@
+<!-- différents liens utiles, par ex: la commune de Dour -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adresses utiles</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Adresses utiles</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre800">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="https://www.communedour.be"
+                                        target="_blank" title="Vers le site de l'Administration Communale de Dour">
+                                        Administration Communale de Dour
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="https://www.communedour.be" target="_blank" title="Vers le site de l'Administration Communale de Dour">
+                                        <img src="static/images/logos/DOUR.jpg" width="85%" height="85%">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://centrecultureldour.be" target="_blank" title="Vers le site du Centre Culturel de Dour">
+                                        Centre Culturel de Dour
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="https://centrecultureldour.be" target="_blank" title="Vers le site du Centre Culturel de Dour">
+                                        <img src="static/images/logos/CCDour.png" width="85%" height="85%">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.honnelles.be" target="_blank" title="Vers le site de la Commune de Honnelles">
+                                        Commune de Honnelles
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="https://www.honnelles.be" target="_blank" title="Vers le site de la Commune de Honnelles">
+                                        <img src="{% static 'images/logos/Honnelles.png' %}" width="85%" height="85%">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://federationmusicalehainaut.be" target="_blank" title="Vers le site de la Fédération Musicale du Hainaut">Fédération Musicale du Hainaut
+                                    </a>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <a href="https://federationmusicalehainaut.be" target="_blank" title="Vers le site de la Fédération Musicale du Hainaut">
+                                        <img src="static/images/logos/FMH.png" width="85%" height="85%">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <footer class="box">
+            <div class="copyright">
+                <em>© 2023 - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="static/images/icons/Facebook.ico" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

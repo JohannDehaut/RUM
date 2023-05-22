@@ -1,0 +1,73 @@
+<!--Page popup de login-->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+       <!-- <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <title>Login</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+           <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Login</p>
+            </div>
+        </header>
+        <section class="popup">
+            <div class="formBox">
+                <img src="{% static 'images/icons/En travaux.png' %}" height="100%" width="100%">
+                <!--<img src="{% static 'images/fonds/partition.jpg' %}" height="80%" width="80%">-->
+                <!--<div class="form">
+                    <form action="">
+                        <div class="formTitre">
+                            <em>Connexion</em>
+                        </div>
+                        <div class="inputBox">
+                            <img src="{% static 'images/icons/envelope.png'%}" height="4%" width="4%">
+                            <label for="">Nom</label>
+                            <input type="text" placeholder="Indiquez votre identifiant" required>
+                        </div>
+                        <div class="inputBox">
+                            <img src="{% static 'images/icons/lock.png'%}" height="4%" width="4%">
+                            <label for="">Mot de passe</label>
+                            <input type="password" placeholder="Indiquez votre mot de passe" required>
+                        </div>
+                        <div class="inputBoxRappel">
+                            <label for="">
+                                <input type="checkbox"> Rappelez-vous de moi
+                            </label>
+                        </div>
+                        <div class="inputBoxOubli">
+                            <a href="#">Mot de passe oublié?</a>
+                        </div>
+                        <button>
+                            <a href="gestionBiblio">Connexion</a>
+                            Connexion
+                        </button>
+                    </form>
+                </div>-->
+            </div>
+        </section>
+        <footer class="box">
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!--Quelques informations pratiques -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Informations pratiques et contact</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Quelques informations pratiques</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre8001">
+                        <table>
+                            <tr>
+                                <td class="col2">Où?</td>
+
+                                <td class="td2">
+                                    <a href="https://www.google.be/maps/place/Rue+du+Cimetière+5,+7370+Dour/@50.3799947,3.8193079,18z/data=!4m5!3m4!1s0x47c25938156902bd:0xa3f0f70fec1aeb48!8m2!3d50.3797755!4d3.8197234?hl=fr" target="_blank" title="Carte Google Map">Ancienne école maternelle de Petit-Dour, 127 rue Ropaix</a>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="col2">Quand?</td>
+                                <td class="td2">Les mardis de 19h30 à 21h30</td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="col2">Pour qui?</td>
+                                <td class="td2">Pour tous les musiciens, qu'ils soient amateurs, débutants, confirmés ou professionnels.<br>
+                                    Avoir des bases musicales et avoir l'esprit sociétaire est important.</td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="col2">Contact</td>
+                                <td class="td2"><a href="mailto:fanfarepetitdour@gmail.com" target="_blank">fanfarepetitdour@gmail.com</a></td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="col2">Lien Facebook</td>
+                                <td>
+                                    <a href="https://www.facebook.com/profile.php?id=100009126660232" target="_blank" title="Page Facebook de la société">
+                                        <img src="{% static 'images/icons/Facebook.ico' %}" width="15%" height="15%">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <td class="col2">Périodes de congés</td>
+                                <td>
+                                    Du 3 au 24 juillet 2023
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="box">
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

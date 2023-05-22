@@ -1,0 +1,93 @@
+<!--Gestion de la bibliothèque -->
+<!--Nécessite une connexion -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gestion de la bibliothèque</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+            </div>
+            <div class="boxTitre">
+                <p>Gestion de la bibliothèque</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenuDeco">
+                <a href="historique" title="Déconnexion et retour à l'historique">
+                    <img src="{% static 'images/icons/Logout.png'%}" height="60%" width="60%">
+                    Déconnexion
+                </a>
+            </div>
+            <div class="contenuB">
+                <div class="formTitreB">
+                    <em>Modification de la collection</em>
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Titre:</label>
+                    <input type="text" placeholder="Titre de l'œuvre" required>
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Sous-titre:</label>
+                    <input type="text" placeholder="En cas de compléments au titre">
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Auteur(s)/Compositeur(s):</label>
+                    <input type="text" placeholder="Indiquer les intervenants dans la création de l'œuvre" required>
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Arrangement:</label>
+                    <input type="text" placeholder="La ou les personnes ayant arrangé l'œuvre">
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Edition:</label>
+                    <input type="text" placeholder="Maison d'édition" required>
+                </div>
+                <div class="inputBoxB">
+                    <label for="">Note(s):</label>
+                    <input type="text" placeholder="Instruments, voix..." required>
+                </div>
+                <br><br>
+                <button2>
+                    <a title="Ajout à la collection">Ajouter</a>
+                </button2>
+                <button2>
+                    <a title="Modification élément sélectionné">Modifier</a>
+                </button2>
+                <button2>
+                    <a title="Suppression élément sélectionné">Supprimer</a>
+                </button2>
+                <button2>
+                    <a title="Annulation des modifications">Annuler</a>
+                </button2>
+            </div>
+            <div class="contenuB">
+                <div class="formTitreB">
+                    <em>Collection</em>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        <footer>
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y"%}</em>
+            </div>
+        </footer>
+    </body>
+</html>

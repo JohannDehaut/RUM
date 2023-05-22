@@ -1,0 +1,376 @@
+*{
+    margin:0px;
+    padding:0px;
+    height:auto;
+}
+body{
+    width:100%;
+    background-color:#FFF0F5;
+}
+#bg{
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:left top;
+    background-attachment:fixed;
+}
+
+/*---------------------------HEADER accueil-----------------------*/
+header
+{
+    height:200px;
+    font-size: 45px;
+    font-family: broadway;
+    text-align:center;
+    width:100%;
+    color:red;
+}
+/*-----------------------------HEADER pages site-------------------------------*/
+.header2{
+    position:fixed;
+    top:0px;
+    display:flex;
+    height:185px;
+    font-size:60px;
+    font-family:broadway;
+    font-weight:bold;
+    width:100%;
+    color:#1FA055;
+    background-color:#FFF0F5;
+}
+.header2BoxImg{
+    margin-left:5px;
+    margin-top:5px;
+    text-align:left;
+    width:200px;
+    height:45px;
+}
+.boxTitre{
+    margin-top:40px;
+    text-align:center;
+    width:100%;
+}
+/*---------------------NAVIGATION---------------------*/
+.boxNAV{
+    position:fixed;
+    width:100%;
+    margin-left:5px;
+    margin-top:170px;
+    font-size:17px;
+    background-color:thistle;
+}
+
+/*---------------------------CORPS---------------------------------------*/
+/*---------------------------MENU LATERAL--------------------------------*/
+
+.blocMenu{
+    position:fixed;
+    margin-top:10px;
+    width:200px;
+}
+.blocMenuDeco{
+    position:fixed;
+    margin-top:10px;
+    width:190px;
+    text-align:center;
+    font-size:30px;
+}
+.blocMenu a{
+    text-decoration:none;
+    color:deepblue;
+    font-size:25px;
+    /*letter-spacing:2px;*/
+    display:list-item;
+    padding:8px;
+    /*border-top:2px solid red;
+    border-bottom:2px solid red;*/
+}
+.blocMenu a:hover{
+    background-color:pink;
+    transition: 0.5s;
+    letter-spacing:1px;
+    /*text-transform:uppercase;*/
+}
+
+/*---------------------------DIV de centrage-----------------------------*/
+.centre800{
+    text-align:center;
+    width:100%;
+}
+.centre8001{
+}
+/*---------------------------TABLEAU-------------------------------------*/
+table{
+    text-align:left;
+    /*display:inline-table;*/
+    color:black;
+}
+tr{
+}
+td{
+    width:240px;
+}
+.td1{
+    width:240px;
+}
+.td2{
+    width:450px;
+}
+.col{
+    color:red;
+}
+.col2{
+    color:green;
+}
+/*---------------------------Mise en forme tableau répertoire------------*/
+.trREP{
+    height:70px;
+}
+.tdREP1{
+    width:370px;
+    padding-right:10px;
+}
+.tdREP2{
+    width:210px;
+}
+.tdREPcentre{
+    text-align:center;
+}
+
+/*---------------------------Mise en forme tableau photos------------*/
+.tableauPhoto{
+    margin:auto;
+    width:600px;
+    text-align:left;
+    display:inline-table;
+    color:black;
+    border-color:aquamarine;
+}
+.trPhotos{
+}
+.tdPhoto{
+}
+/*---------------------------BLOC TEXTE----------------------------------*/
+.conteneur{
+    margin-top:201px;
+    /*width:100%;*/
+    height:auto;
+    display:flex;
+    /*border: 2px red solid;*/
+}
+
+/*------Contenu textes--------------*/
+.contenu{
+    font-family:times new roman;
+    /*color:black;*/
+    font-size:19px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:auto;
+    text-align:justify;
+    height:100%;
+    /*border: 2px yellow solid;*/
+}
+.contenuMil{
+    padding:0px;
+}
+.contenuNiv2{
+    margin-left: 200px;
+    margin-right: 10px;
+    /*border: 2px green solid;*/
+}
+
+/*-------------------------------IMAGES---------------------------------*/
+.img{
+    text-align:center;
+    width="50%";
+    height="50%";
+    /*  Pour pouvoir utiliser la fonction "text-align, une image doit être contenue entre deux div*/
+}
+.img2{
+    tex-align:left;
+    width:100%;
+}
+.imgTBL{
+    text-align:center;
+    height:10px;
+}
+.texteMilieu{
+    width:100%;
+    text-align:center;
+    height:50px;
+}
+.texteMilieuCol{
+    width:100%;
+    text-align:center;
+    /*height:50px;*/
+    color:black;
+}
+.blocContenuTexte{
+    width:98%;
+    height:auto;
+    font-family: arial;
+    text-align:justify;
+    margin-left:10px;
+}
+.texteJustif{
+    width:100%;
+    margin-top:50px;
+}
+.infos{
+    font-color:red;
+}
+/*----------------FOOTER----------------------------------------------------------------------------------------------*/
+footer
+{
+    position:fixed;
+    padding:5px 5px 5px 5px;
+    bottom:0px;
+    width:100%;
+    height:20px;
+    display:flex;
+    background-color:#FFF0F5;
+    font-size:12px;
+}
+.copyright
+{
+    float:left;
+    text-align:left;
+    margin-top:auto;
+    margin-bottom:auto;
+    width:auto;
+}
+.liens
+{
+    float:left;
+    text-align:left;
+    padding-left:15px;
+}
+.dateJour{
+    /*width: 200px;*/
+    float: right;
+    text-align:right;
+    font-size:15px;
+}
+/*------------------------------------DATE-Titre---------------------------*/
+.dateJourTitre{
+    text-align:center;
+    font-size:15px;
+    color:black;
+}
+
+/*------------------------------------LOGIN--------------------------------*/
+.popup{
+    font-family:arial;
+    /*color:gold;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    width:100%;
+    background-color:#FFF0F5;
+}
+.formBox{
+    position:relative;
+    display:flex;
+    width:350px;
+    height:350px;
+    background:transparent;
+    border:3px solid;
+    border-radius:30px;
+    justify-content:center;
+    align-items:center;
+}
+.formTitre{
+    font-size:40px;
+    font-weight:bold;
+    color:red;
+    text-align:center;
+}
+.form{
+
+}
+.inputBox{
+    position:relative;
+    margin:30px 0;
+    width:300px;
+}
+.inputBox label{
+    position:absolute;
+    left:15px;
+}
+.inputBox input{
+    width:100%;
+    height:25px;
+    background:transparent;
+}
+.inputBoxRappel{
+    margin: -20px 0 10px;
+    font-size:.7em;
+    display:flex;
+    justify-content:center;
+}
+.inputBoxOubli{
+    margin-right:3px;
+    margin-bottom:15px;
+    font-size:.7em;
+    display:flex;
+    justify-content:center;
+}
+button{
+    width:100%;
+    height:50px;
+    border-radius:50px;
+    background:purple;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/*------------------------------------BIBLIOTHEQUE--------------------------------*/
+
+.contenuB{
+    font-family:times new roman;
+    /*border-right: solid #000;*/
+    /*color:black;*/
+    margin-top:20px;
+    margin-left:250px;
+    margin-right:25px;
+    /*width:auto;*/
+    text-align:justify;
+    height:100%;
+}
+.inputBoxB{
+    position:relative;
+    margin:20px 0;
+    width:400px;
+}
+.inputBoxB label{
+    position:relative;
+    /*left:15px;*/
+}
+.inputBoxB input{
+    width:100%;
+    height:25px;
+    background:none;
+}
+.formTitreB{
+    font-size:30px;
+    font-weight:bold;
+    color:brown;
+    text-align:center;
+}
+button2{
+    width:100%;
+    height:20px;
+    font-size:15px;
+    border-radius:50%;
+    padding:14px 15px;
+    background:green;
+    color:gold;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    margin-right:20px;
+}

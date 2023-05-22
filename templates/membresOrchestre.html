@@ -1,0 +1,286 @@
+<!-- Présentation des musiciens de l'orchestre -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Musiciens de la société</title>
+        <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+    </head>
+    <!--<body id="bg" style="background-image:url('{% static 'images/fonds/direction.jpg' %}')">-->
+    <body>
+        <header class="header2">
+            <div class="header2BoxImg">
+                <a href="home">
+                    <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="boxTitre">
+                <p>Orchestre</p>
+            </div>
+        </header>
+        <section class="conteneur">
+            <div class="blocMenu">
+                <a href="historique">Historique</a>
+                <a href="orchestre">Orchestre</a>
+                <a href="repertoire">Répertoire annuel</a>
+                <a href="agenda">Agenda</a>
+                <a href="pratique">Infos pratiques</a>
+                <a href="media">Quelques photos</a>
+                <a href="asbl">ASBL</a>
+                <a href="liensSocietes">Sociétés amies</a>
+                <a href="adressesUtiles">Adresses utiles</a>
+                <a href="login" title="Vers la gestion de la bibliothèque">
+                    <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+                </a>
+            </div>
+            <div class="contenu">
+                <div class="contenuNiv2">
+                    <div class="centre800">
+                        <table>
+                            <tr>
+                                <td class="col">Flûte</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Marie DOYEN</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Thérèse MAURY</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Hautbois</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Patrick DUBUISSON</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Petite clarinette</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Isabelle DEHON</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Clarinette</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Cindy ABRASSART</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Edwin BERNARD</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Déborah CRAPEZ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Isabelle DEHON</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Valère FOURBISSEUR</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Sylvianne LAURYSSE</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Frédéric MONTREUIL</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Claudy PREVOST</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Simon RICHEZ</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Sarah VANTYGHEM</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Jean-Noël VEYS</td>
+                            </tr>
+                            <!--<tr>
+                                <td class="col">Basson</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>-->
+                            <tr>
+                                <td class="col">Clarinette basse</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Alain DELAHAUTEMAISON</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Saxophone alto</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Lucille CUVELIER</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Serge CUVELIER</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Edmond KOMAROMI</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Jean-Jacques LIENARD</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col">Saxophone ténor</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Georges ALEXANDRE</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Françoise DEFOSSES</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Murielle FRONTY</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Romain PASCHINI</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Saxophone baryton</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Gérard CHAUDIEZ</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Bugle</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Gaston CANSIER</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Cornet/Trompette</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>David CHAUDIEZ</td>
+                            </tr>
+                            <!--<tr>
+                                <td></td>
+                                <td>Freddy DEFOSSES</td>
+                            </tr>-->
+                            <tr>
+                                <td></td>
+                                <td>Johann DEHAUT</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Bernard LIEGEOIS</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Cor</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Christian MEUTE</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Trombone</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Guy DEHON</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Yvan-Louis DRUART</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Euphonium</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Fabrice LEPRETRE</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Didier PREVOST</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Basse</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Didier GUERARD</td>
+                            </tr>
+                            <!--<tr>
+                                <td class="col">String basse</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>-->
+                            <tr>
+                                <td class="col">Drums</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Gauvain VYNCKE</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Timbales</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Christophe MATON</td>
+                            </tr>
+                            <tr>
+                                <td class="col">Synthétiseur</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Carine ESTIEVENART</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <footer class="box">
+            <div class="copyright">
+                <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+            </div>
+            <div class="liens">
+                <a href="https://www.facebook.com/profile.php?id=100009126660232"
+                   title="Vers la page Facebook de la RUM" target="_blank">
+                    <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+                </a>
+            </div>
+            <div class="dateJour">
+                <em>Nous sommes le {% now "j E Y" %}</em>
+            </div>
+        </footer>
+    </body>
+</html>

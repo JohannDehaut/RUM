@@ -1,0 +1,60 @@
+<!-- Chargement du dossier "static" -->
+{% load static %}
+
+<!-- Menu de navigation latéral -->
+<div class="blocMenu">
+    <a href="historique">Historique</a>
+    <a href="orchestre">Orchestre</a>
+    <a href="repertoire#">Répertoire annuel</a>
+    <a href="bibliotheque">Bibliothèque</a>
+    <a href="pratique">Infos pratiques</a>
+    <a href="media">Quelques photos</a>
+    <a href="asbl">ASBL</a>
+    <a href="liensSocietes">Sociétés amies</a>
+    <a href="adressesUtiles">Adresses utiles</a>
+    <a href="agenda">Agenda</a>
+    <a href="gestionBiblio" title="Vers la gestion de la bibliothèque">
+        <img src="{% static 'images/icons/Login.png'%}" height="70%" width="70%">
+    </a>
+</div>
+
+<!-- Header -->
+<header class="header2">
+    <div class="header2BoxImg">
+        <img src="{% static 'images/logos/RUM.jpg' %}" width="100%" height="100%">
+    </div>
+    <div class="boxTitre">
+        <p>Historique de la RUM</p>
+    </div>
+</header>
+
+<!-- Head -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L'histoire de notre société</title>
+    <link href="{% static 'CSS/style.css' %}" rel="stylesheet">
+</head>
+
+<!-- -->
+
+<!-- -->
+
+<!-- -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="copyright">
+        <em>© {% now "Y"%} - Royale Union Musicale de Petit-Dour - All rights reserved - Réalisé par J.D.</em>
+    </div>
+    <div class="liens">
+        <a href="https://www.facebook.com/profile.php?id=100009126660232"
+           title="Vers la page Facebook de la RUM" target="_blank">
+           <img src="{% static 'images/icons/Facebook.ico' %}" width="8%" height="8%">
+        </a>
+    </div>
+    <div class="dateJour">
+        <em>Nous sommes le {% now "d - m - Y"%}</em>
+    </div>
+</footer>
